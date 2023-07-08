@@ -1,0 +1,22 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#002b36"
+    background_darkness = 0.91
+    background_type = transparent
+    cursor_color = "#e0f0f1"
+    font = Noto Mono for Powerline 11
+    foreground_color = "#eeeeec"
+    show_titlebar = False
+    palette = "#2e3436:#cc241d:#98971a:#729fcf:#3465a4:#b16286:#689d6a:#eeeeec:#888a85:#fb4934:#b8bb26:#204a87:#83a598:#d3869b:#8ec07c:#ebdbb2"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]

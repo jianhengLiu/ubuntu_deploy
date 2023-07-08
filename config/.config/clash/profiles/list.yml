@@ -1,0 +1,41 @@
+files:
+  - url: ""
+    time: 1658282851319.yml
+    name: config.yaml
+    selected: []
+  - time: 1658283139554.yml
+    name: Clash_1658283139.yaml
+    url: https://www.sstank.top/link/tgCHHnnaqEnsiYV3?clash=1
+    selected:
+      - name: GLOBAL
+        now: 新加坡1-v2ray
+      - name: 🚀 节点选择
+        now: 新加坡1-Trojan
+      - name: 🌍 国外媒体
+        now: 🚀 节点选择
+      - name: 📲 电报信息
+        now: 🚀 节点选择
+      - name: Ⓜ️ 微软服务
+        now: 🚀 节点选择
+      - name: 🍎 苹果服务
+        now: 🎯 全球直连
+      - name: 📢 谷歌FCM
+        now: 🚀 节点选择
+      - name: 🎯 全球直连
+        now: DIRECT
+      - name: 🛑 全球拦截
+        now: REJECT
+      - name: 🍃 应用净化
+        now: REJECT
+      - name: 🐟 漏网之鱼
+        now: 🚀 节点选择
+    interval: 24
+    subInfo:
+      upload: 2725321005
+      download: 22682610564
+      total: 214748364800
+      expire: 1709777451
+    mode: rule
+    cron: ""
+    headers: ""
+index: 1

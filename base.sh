@@ -14,3 +14,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 
 # 录屏软件
 sudo apt install -y simplescreenrecorder
+
+cp -r config/* ~/

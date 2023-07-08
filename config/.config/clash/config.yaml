@@ -1,0 +1,5 @@
+mixed-port: 8889
+allow-lan: true
+external-controller: 127.0.0.1:32977
+secret: d7cf76e1-8f75-462d-86b6-ec70736c350c
+ipv6: false
