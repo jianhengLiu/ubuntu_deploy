@@ -15,4 +15,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 # 录屏软件
 sudo apt install -y simplescreenrecorder
 
+# gif 录屏软件
+sudo add-apt-repository ppa:peek-developers/stable
+sudo apt update
+sudo apt install peek
+
 cp -r config/* ~/
