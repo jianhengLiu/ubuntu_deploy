@@ -13,7 +13,25 @@ else
   echo "Directory $dir_name already exists"
 fi
 
-cd $dir_name
+mkdir $dir_name/ipopt_solver
+
+cd $dir_name/ipopt_solver
+git clone https://github.com/coin-or-tools/ThirdParty-ASL.git
+cd ThirdParty-ASL
+sudo ./get.ASL
+sudo ./configure
+sudo make
+sudo make install
+
+cd $dir_name/ipopt_solver
+git clone https://github.com/coin-or-tools/ThirdParty-Mumps.git
+cd ThirdParty-Mumps
+sudo ./get.Mumps
+sudo ./configure
+sudo make
+sudo make install
+
+cd $dir_name/ipopt_solver
 git clone https://github.com/coin-or-tools/ThirdParty-HSL.git
 mkdir $coninhsl_path/coinhsl
 tar -xzvf $coninhsl_path/coinhsl-2023.05.26.tar.gz -C $coninhsl_path/coinhsl --strip-components 1
