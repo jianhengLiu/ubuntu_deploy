@@ -35,7 +35,7 @@ cd $dir_name/ipopt_solver
 git clone https://github.com/coin-or-tools/ThirdParty-HSL.git
 mkdir $coninhsl_path/coinhsl
 tar -xzvf $coninhsl_path/coinhsl-2023.05.26.tar.gz -C $coninhsl_path/coinhsl --strip-components 1
-mv $coninhsl_path/coinhsl $dir_name/ThirdParty-HSL
+mv $coninhsl_path/coinhsl $dir_name/ipopt_solver/ThirdParty-HSL
 cd ThirdParty-HSL
 ./configure
 make
