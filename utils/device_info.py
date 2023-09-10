@@ -16,7 +16,8 @@ def cpu_info():
                 procinfo = OrderedDict()
             else:
                 if len(line.split(":")) == 2:
-                    procinfo[line.split(":")[0].strip()] = line.split(":")[1].strip()
+                    procinfo[line.split(":")[0].strip()] = line.split(":")[
+                        1].strip()
                 else:
                     procinfo[line.split(":")[0].strip()] = ""
     return CPUinfo
@@ -41,7 +42,7 @@ def generate_info():
         deviceCount = pynvml.nvmlDeviceGetCount()
         for i in range(deviceCount):
             handle = pynvml.nvmlDeviceGetHandleByIndex(i)
-            gpu = pynvml.nvmlDeviceGetName(handle)
+            gpu = pynvml.nvmlDeviceGetName(handle).decode()
             info += " " + gpu
         info += "\n"
     else:
