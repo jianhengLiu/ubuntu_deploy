@@ -20,7 +20,8 @@ sudo apt-get install \
     qtbase5-dev \
     libqt5opengl5-dev \
     libcgal-dev \
-    libceres-dev
+    libceres-dev \
+    liblz4-dev
 
 sudo apt-get install -y \
     nvidia-cuda-toolkit \
@@ -39,11 +40,13 @@ else
 fi
 
 cd $dir_name
+# https://colmap.github.io/install.html#linux
 git clone https://github.com/colmap/colmap.git
 cd colmap
 git checkout dev
 mkdir build
 cd build
-cmake .. -GNinja
+# if any dependencies wrong, checkout to a release version
+cmake .. -GNinja # -DCMAKE_CUDA_ARCHITECTURES='native'
 ninja
 sudo ninja install
