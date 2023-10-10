@@ -20,4 +20,10 @@ sudo add-apt-repository ppa:peek-developers/stable
 sudo apt update
 sudo apt install peek
 
+# 系统监控
+sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor  
+sudo apt-get update 
+sudo apt-get install indicator-sysmonitor 
+
+
 cp -r config/* ~/
